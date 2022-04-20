@@ -1,5 +1,6 @@
 namespace Softlr.TaskEx;
 
+[SuppressMessage(SONARQUBE, S1172)]
 [SuppressMessage(SONARQUBE, S2436)]
 [SuppressMessage(SONARQUBE, S3242)]
 [SuppressMessage(SONARQUBE, S4017)]
