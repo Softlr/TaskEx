@@ -9,6 +9,7 @@ This library contains extensions for tasks.
 dotnet add package Softlr.TaskEx
 ```
 
+# Usage
 ## Awaiting multiple tasks
 The library provides a simple way of awaiting multiple task results with as little code as possible.
 
