@@ -4,11 +4,23 @@
 # Description
 This library contains extensions for tasks.
 
+# Installation
+```ps
+dotnet add package Softlr.TaskEx
+```
+
 ## Awaiting multiple tasks
 The library provides a simple way of awaiting multiple task results with as little code as possible.
 
 Typically when you want to await multiple tasks you will be doing something like
 ```csharp
+task1.Start();
+task2.Start();
+await task1;
+await task2;
+```
+or
+```
 await Task.WhenAll(task1, task2);
 ```
 
