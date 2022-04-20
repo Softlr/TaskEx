@@ -143,9 +143,16 @@ public class TaskExTests
     [Theory]
     [AutoData]
     public async Task Awaiting_7_tasks_should_return_their_results(
-        Task<int> task1, Task<int> task2, Task<int> task3, Task<int> task4, Task<int> task5, Task<int> task6, Task<int> task7)
+        Task<int> task1,
+        Task<int> task2,
+        Task<int> task3,
+        Task<int> task4,
+        Task<int> task5,
+        Task<int> task6,
+        Task<int> task7)
     {
-        var (result1, result2, result3, result4, result5, result6, result7) = await (task1, task2, task3, task4, task5, task6, task7);
+        var (result1, result2, result3, result4, result5, result6, result7) =
+            await (task1, task2, task3, task4, task5, task6, task7);
 
         result1.Should().Be(await task1!);
         result2.Should().Be(await task2!);
